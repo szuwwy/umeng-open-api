@@ -1,0 +1,21 @@
+{
+    "name": "wwy/umeng-open-api",
+    "description": "友盟数据统计",
+    "type": "sdk",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "wwy",
+            "email": "szuwwy@126.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "Wwy\\example\\" : "src/com/alibaba/china/openapi/example/",
+            "Wwy\\client\\" : "src/com/alibaba/openapi/client/",
+            "Wwy\\umeng\\" : "src/com/umeng/"
+        }
+    },
+    "require": {}
+}
