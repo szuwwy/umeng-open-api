@@ -36,7 +36,7 @@ class UmengUappGetYesterdayDataResult
 	public function setStdResult($stdResult) 
     {
 		$this->stdResult = $stdResult;
-		if (array_key_exists ( "yesterdayData", $this->stdResult )) {
+		if (property_exists ($this->stdResult, "yesterdayData")) {
     		$yesterdayDataResult=$this->stdResult->{"yesterdayData"};
     		$this->yesterdayData = new UmengUappDailyDataInfo();
     		$this->yesterdayData->setStdResult ( $yesterdayDataResult);
